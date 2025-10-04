@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Arturo Casas ChavarrÃƒÂ­a Ã‚Â· Full-Stack Developer</title>
+  <title>Arturo Casas Chavarría · Full-Stack Developer</title>
 
   <!-- Bootstrap CSS v5.3 vÃƒÂ­a CDN -->
   <link rel="stylesheet"
@@ -148,18 +148,15 @@
   <section id="contacto" class="py-5 bg-light">
     <div class="container">
       <h2 class="section-title text-center mb-4">Contacto</h2>
-      <form id="formContacto" class="col-lg-6 mx-auto">
+      <form id="formContacto" class="col-lg-6 mx-auto" action="https://formspree.io/f/xblzkdya"
+  method="POST">
         <div class="form-floating mb-3">
-          <input class="form-control" id="nombre" placeholder="Nombre" required>
-          <!--<label for="nombre">Nombre</label>-->
-        </div>
-        <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="email"
+          <input type="email" name="email" class="form-control" id="email"
                  placeholder="correo@example.com" required>
           <!--<label for="email">Correo</label>-->
         </div>
         <div class="form-floating mb-3">
-          <textarea class="form-control" id="mensaje"
+          <textarea class="form-control" id="mensaje" name="message"
                     style="height:120px" required></textarea>
         <!--<label for="mensaje">Mensaje</label>-->
         </div>
