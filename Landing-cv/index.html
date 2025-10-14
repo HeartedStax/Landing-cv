@@ -1,0 +1,185 @@
+﻿<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arturo Casas Chavarría · Full-Stack Developer</title>
+
+  <!-- Bootstrap CSS v5.3 vÃƒÂ­a CDN -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Tu hoja de estilos personalizada -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true">
+
+  <!-- ===== HERO ===================================================== -->
+  <header id="hero"
+          class="vh-100 text-white d-flex flex-column justify-content-center
+                 align-items-center bg-gradient">
+    <h1 class="display-1 fw-bold mb-0" id="typed-name"></h1>
+    <p class="lead mb-4">Ingeniero en Sistemas · Full-Stack Developer</p>
+    <a href="#contacto" class="btn btn-outline-light btn-lg">Contactame</a>
+    <span class="mt-5 text-uppercase small scroll-down">Scroll</span>
+  </header>
+
+  <!-- ===== NAVBAR fija ============================================== -->
+  <nav id="nav" class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Arturo C.</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mí­</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item d-flex align-items-center ms-lg-3">
+            <input class="form-check-input" type="checkbox" id="themeSwitch">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== SOBRE MÍ ================================================= -->
+  <section id="sobre" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Sobre mí­</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-5 text-center">
+          <img src="./media/ArturoCasasPic.jpg"
+               class="rounded-3 img-fluid shadow"
+               alt="Arturo Casas Chavarría">
+        </div>
+        <div class="col-md-7">
+          <p class="fs-5">Desarrollador apasionado por construir soluciones...</p>
+          <p>Intereses: Web development, database administration, CISCO Networking.</p>
+          <div class="education-card d-flex align-items-center gap-3 mt-4">
+            <img src="./media/InstitutoTecLerdo.jpg" alt="Instituto Tecnologico de Lerdo" class="education-logo">
+            <div>
+              <h6 class="text-uppercase fw-semibold mb-1">Educacion</h6>
+              <p class="mb-0">Ingenieria en Sistemas Computacionales - Instituto Tecnologico Superior de Lerdo</p>
+              <hr>
+              <h6 class="text-uppercase fw-semibold mb-1">Especialidad</h6>
+              <p> Almacenamientos de datos y desarrollo multiplataforma</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES ============================================== -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Habilidades</h2>
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <h5>Front-End <span class="badge bg-primary">HTML</span><span class="badge bg-primary">CSS</span><span class="badge bg-primary">JAVASCRIPT</span></h5>
+          <div class="progress"><div class="progress-bar" data-level="65"></div></div>
+        </div>
+        <div class="col-md-6">
+          <h5>Back-End <span class="badge bg-success">Node.js</span></h5>
+          <div class="progress"><div class="progress-bar" data-level="80"></div></div>
+        </div>
+        <div class="col-md-6">
+          <h5>Administración de DB <span class="badge bg-success">MySQL</span><span class="badge bg-success">MongoDB</span></h5>
+          <div class="progress"><div class="progress-bar" data-level="90"></div></div>
+        </div>
+        <div class="col-md-6">
+          <h5>Desarrollo de escritorio <span class="badge bg-primary">ASP.Net</span><span class="badge bg-primary">C#</span></h5>
+          <div class="progress"><div class="progress-bar" data-level="70"></div></div>
+        </div>
+        <div class="col-md-6">
+          <h5>Desarrollo movil <span class="badge bg-primary">Kotlin</span><span class="badge bg-primary">Java</span></h5>
+          <div class="progress"><div class="progress-bar" data-level="50"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS =============================================== -->
+  <section id="proyectos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Proyectos destacados</h2>
+
+      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card shadow border-0">
+              <img src="./media/MuestraCurriculumWeb.png" class="card-img-top" alt="Proyecto 1">
+              <div class="card-body">
+                <h5 class="card-title">Currículum Web</h5>
+                <p class="card-text small">HTML + CSS + JAVASCRIPT + FORMSPREE</p>
+                <hr>
+                <p class="card-text small">Una landing page personal y responsiva desarrollada desde cero para mostrar mis habilidades como desarrollador frontend. El proyecto incluye una sección "Sobre mí", un listado de mis competencias tecnológicas y un formulario de contacto funcional.</p>
+                <a href="https://github.com/HeartedStax/Landing-cv" class="btn btn-outline-primary btn-sm"
+                   target="_blank">Repositorio en github</a>
+              </div>
+            </div>
+          </div>
+          <!-- Carrusel -->
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#projectCarousel"
+                data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" data-bs-target="#projectCarousel"
+                data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCIA ============================================= -->
+  <!--<section id="experiencia" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Experiencia</h2>
+      <ul class="timeline">
+        <li>
+          <h6>2024-2025 <strong>¡Experiencia por venir!</strong> </h6>
+          <p>¡Aquí pondre mi experiencia cuando la obtenga!</p>
+        </li>
+      </ul>
+    </div>
+  </section>-->
+
+  <!-- ===== CONTACTO ================================================ -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Contacto</h2>
+      <form id="formContacto" class="col-lg-6 mx-auto" action="https://formspree.io/f/xblzkdya"
+  method="POST">
+        <div class="form-floating mb-3">
+          <input type="email" name="email" class="form-control" id="email"
+                 placeholder="correo@example.com" required>
+          <!--<label for="email">Correo</label>-->
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" id="mensaje" name="message"
+                    style="height:120px" placeholder="Mensaje" required></textarea>
+        <!--<label for="mensaje">Mensaje</label>-->
+        </div>
+        <button class="btn btn-primary w-100" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center bg-dark text-white">
+    <small>©2025 Arturo Casas Chavarría</small>
+  </footer>
+
+  <!-- Bootstrap JS + Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Tu JS -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
+
