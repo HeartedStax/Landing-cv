@@ -92,3 +92,15 @@ body{
   box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 [data-theme="dark"] .education-logo{box-shadow:0 .5rem 1rem rgba(0,0,0,.4);}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 5; /* Un z-index base para los controles */
+}
+
+/* 2. Eleva el contenido de la tarjeta por encima de los controles */
+.carousel-item .card {
+  position: relative; 
+  z-index: 10; /* Un valor MÁS ALTO que el de los controles */
+}
